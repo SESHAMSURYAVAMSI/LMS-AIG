@@ -59,7 +59,7 @@ export default function RegisteredVideoQueue({ videos, currentVideoId, eventId }
         <div className="p-4 border-t bg-gray-50 text-center">
           <p className="text-xs font-semibold text-gray-500 mb-2 tracking-wider">EDUCATIONAL GRANT BY</p>
           <div className="flex justify-center">
-            <Image src="/sun_pharma.png" alt="Sun Pharma Logo" width={100} height={40} className="object-contain" />
+            <Image src="/Sun_Pharma.png" alt="Sun Pharma Logo" width={100} height={40} className="object-contain" />
           </div>
         </div>
       </div>
