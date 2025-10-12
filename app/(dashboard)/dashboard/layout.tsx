@@ -1,6 +1,6 @@
 import DashboardHeader from "@/app/components/common/DashboardHeader";
 import Sidebar from "@/app/components/common/Sidebar";
-import Footor from "@/app/components/common/footer";
+import Footer from "@/app/components/common/footer"; // ✅ fixed naming (Footor → Footer)
 
 export default function DashboardLayout({
   children,
@@ -8,14 +8,20 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex font-poppins">
+    <div className="flex font-poppins min-h-screen bg-[#FAFAFA] ">
+      {/* Sidebar */}
       <Sidebar />
-      <Footor />
-      <div className="flex-1 ml-64">
+
+      {/* Main Content Area */}
+      <div className="flex flex-col flex-1 ml-64">
+        {/* Header */}
         <DashboardHeader />
-        <main className="mt-20 p-6 min-h-[calc(100vh-5rem)] bg-[#FAFAFA]">
-          {children}
-        </main>
+
+        {/* Main Content */}
+        <main className="flex-1 mt-20 p-6 bg-[#FAFAFA]">{children}</main>
+
+        {/* Footer */}
+        <Footer />
       </div>
     </div>
   );
