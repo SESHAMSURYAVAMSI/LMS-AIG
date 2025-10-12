@@ -72,7 +72,7 @@ export default function VideoQueue({ videos, currentVideoId, eventId }: VideoQue
           </p>
           <div className="flex justify-center">
             <Image
-                src="/sun_pharma.png" // Make sure you have this image in your /public folder
+                src="/Sun_Pharma.png" // Make sure you have this image in your /public folder
                 alt="Sun Pharma Logo"
                 width={100}
                 height={40}
