@@ -36,7 +36,7 @@ export default function SpeakerDetails({ speaker, videos }: Props) {
   return (
     <div className="space-y-8">
       {/* Breadcrumb */}
-      <div className="flex items-center text-sm text-gray-500 font-medium">
+      <div className="flex items-center text-sm text-orange-500 font-medium">
         <Link href="/dashboard/speakers" className="hover:underline">Speakers</Link>
         <span className="mx-2">{'>'}</span>
         <span className="text-orange-600">{speaker.name}</span>
