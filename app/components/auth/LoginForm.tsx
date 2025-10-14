@@ -40,7 +40,7 @@ export function LoginForm() {
           className="w-full max-w-md mx-auto space-y-4 px-2 font-poppins"
         >
           <h1 className="text-2xl font-bold text-[#0d47a1] mb-6">
-            Admin Login
+           Login
           </h1>
 
           {/* Email */}
